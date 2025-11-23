@@ -1,14 +1,1 @@
-/*!*******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/my-custom-block/style.scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************************/
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-.wp-block-create-block-my-custom-block {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
-}
+.wp-block-mytheme-hero-section{align-items:center;display:flex;flex-direction:column;justify-content:center;min-height:400px}.wp-block-mytheme-hero-section h1{font-weight:700;margin:0 0 20px}.wp-block-mytheme-hero-section p{margin:0 0 30px;max-width:600px}.wp-block-mytheme-hero-section .hero-button{transition:transform .3s ease}.wp-block-mytheme-hero-section .hero-button:hover{transform:scale(1.05)}

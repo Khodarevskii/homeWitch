@@ -11,25 +11,42 @@ export default function save({ attributes }) {
 
     return (
         <div {...blockProps}>
-            <RichText.Content 
-                tagName="h2" 
+            <RichText.Content
+                tagName="h1"
                 value={attributes.title}
-                style={{ 
+                style={{
                     color: '#ffffff',
                     fontSize: '48px',
                     marginBottom: '20px'
                 }}
             />
-            <RichText.Content 
+            <RichText.Content
                 tagName="p"
                 value={attributes.subtitle}
-                style={{ 
+                style={{
                     color: '#ffffff',
                     fontSize: '24px',
                     marginBottom: '30px'
                 }}
             />
-           
+            {attributes.buttonText && attributes.buttonUrl && (
+                <a
+                    href={attributes.buttonUrl}
+                    className="hero-button"
+                    style={{
+                        display: 'inline-block',
+                        padding: '15px 30px',
+                        backgroundColor: '#ffffff',
+                        color: attributes.backgroundColor || '#5b32a3',
+                        textDecoration: 'none',
+                        borderRadius: '5px',
+                        fontWeight: 'bold',
+                        transition: 'all 0.3s ease'
+                    }}
+                >
+                    {attributes.buttonText}
+                </a>
+            )}
         </div>
     );
 }

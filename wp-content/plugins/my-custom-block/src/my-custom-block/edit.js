@@ -53,7 +53,7 @@ export default function Edit({ attributes, setAttributes }) {
                     value={attributes.title}
                     onChange={(value) => setAttributes({ title: value })}
                     placeholder={__('Введите заголовок...', 'my-custom-block')}
-                    style={{ 
+                    style={{
                         color: '#ffffff',
                         fontSize: '48px',
                         marginBottom: '20px'
@@ -64,13 +64,27 @@ export default function Edit({ attributes, setAttributes }) {
                     value={attributes.subtitle}
                     onChange={(value) => setAttributes({ subtitle: value })}
                     placeholder={__('Введите подзаголовок...', 'my-custom-block')}
-                    style={{ 
+                    style={{
                         color: '#ffffff',
                         fontSize: '24px',
                         marginBottom: '30px'
                     }}
                 />
-               
+                {attributes.buttonText && (
+                    <div
+                        style={{
+                            display: 'inline-block',
+                            padding: '15px 30px',
+                            backgroundColor: '#ffffff',
+                            color: attributes.backgroundColor || '#5b32a3',
+                            borderRadius: '5px',
+                            fontWeight: 'bold',
+                            cursor: 'pointer'
+                        }}
+                    >
+                        {attributes.buttonText}
+                    </div>
+                )}
             </div>
         </>
     );
