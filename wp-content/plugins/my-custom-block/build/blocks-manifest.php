@@ -16,6 +16,28 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
+		'attributes' => array(
+			'title' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'subtitle' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'buttonText' => array(
+				'type' => 'string',
+				'default' => 'Узнать больше'
+			),
+			'buttonUrl' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'backgroundColor' => array(
+				'type' => 'string',
+				'default' => '#5b32a3'
+			)
+		),
 		'textdomain' => 'my-custom-block',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
